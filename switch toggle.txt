@@ -1,0 +1,24 @@
+#properly toggle the button to switch between an ON state and an OFF state. 
+#When the button is on and it is clicked, it turns off and the
+# text within it changes from ON to OFF and vice versa
+
+import $ from "jquery";
+
+  $(function(){
+    $("#btn").click(function(){
+      if ($("#btn").text() == "ON")
+      {
+        $("#btn").text("OFF")
+      }
+      else if ($("#btn").text() == "OFF")
+      {
+        $("#btn").text("ON")
+      }
+    }
+    )
+    
+  })
+
+
+const rootApp = document.getElementById("root");
+rootApp.innerHTML = '<button id = "btn">ON</button>';
