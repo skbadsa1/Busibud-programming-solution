@@ -15,7 +15,8 @@ function MatchingCharacters(str) {
     for(var j = i+1; j< lastIdx; j++){
       if(charObj[str[j]] == undefined) charObj[str[j]] = str[j]
     }
-    if(count < Object.keys(charObj).length) count = Object.keys(charObj).length
+    if(count < Object.keys(charObj).length) 
+      count = Object.keys(charObj).length
   }
   return count
 }

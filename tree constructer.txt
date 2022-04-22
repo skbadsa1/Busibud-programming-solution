@@ -1,4 +1,4 @@
-#tree constructer
+5 #tree constructer
 def TreeConstructor(strArr):
     parent = []
     child = []
